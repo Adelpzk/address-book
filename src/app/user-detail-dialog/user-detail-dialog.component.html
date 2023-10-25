@@ -1,0 +1,38 @@
+<h1 mat-dialog-title>{{ data.firstname }} {{ data.lastname }}</h1>
+<div mat-dialog-content>
+  <div class="dialog-container">
+    <img
+      [src]="data.image_large"
+      alt="{{ data.firstname }} {{ data.lastname }}"
+      class="user-image"
+    />
+
+    <p><strong>Birthday:</strong> {{ data.dob | date : "mediumDate" }}</p>
+    <p><strong>Age:</strong> {{ data.age }}</p>
+    <p><strong>Cell:</strong> {{ data.cell }}</p>
+    <p><strong>Email:</strong> {{ data.email }}</p>
+    <p><strong>Nationality:</strong> {{ data.nat }}</p>
+    <p><strong>Country:</strong> {{ data.country }}</p>
+    <p><strong>City:</strong> {{ data.city }}</p>
+    <p><strong>State:</strong> {{ data.city }}</p>
+  </div>
+  <div>
+    <app-map [lat]="data.lat" [lon]="data.lon"></app-map>
+  </div>
+</div>
+<div mat-dialog-actions align="end">
+  <div class="button">
+    <button
+      class="star-button"
+      color="white"
+      mat-icon-button
+      (click)="toggleStar(data.firstname + ' ' + data.lastname)"
+    >
+      <mat-icon
+        [class.filled-star]="data.starState"
+        [class.filled-star-gradient]="data.starState"
+        >{{ data.starState ? "star" : "star_outline" }}</mat-icon
+      >
+    </button>
+  </div>
+</div>

@@ -1,0 +1,64 @@
+<mat-toolbar color="primary" class="transparent-navbar" >
+  <button
+    mat-icon-button
+    (click)="sidenav.toggle()"
+    *ngIf="isHandset$ | async"
+    aria-label="Toggle sidenav"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <div class="logo">
+    <img src="assets/addressbook-high-resolution-logo-white-transparent.png" alt="App logo" />
+  </div>
+  <span class="spacer"></span>
+
+  <!-- Desktop menu items -->
+  <div class="desktop-menu" *ngIf="(isHandset$ | async) === false">
+    <a class="nav-item" mat-button routerLink="/">
+      <mat-icon>home</mat-icon>
+      Home
+    </a>
+    <a class="nav-item" mat-button routerLink="contacts">
+      <mat-icon>person</mat-icon>
+      Contacts
+    </a>
+    <a class="nav-item" mat-button routerLink="favourites">
+      <mat-icon>star</mat-icon>Favourites
+    </a>
+  </div>
+</mat-toolbar>
+
+<mat-sidenav-container class="hambergure-menu sidenav-container">
+  <mat-sidenav
+    #sidenav
+    class="my-sidenav"
+    mode="over"
+    opened="false"
+    [fixedInViewport]="isHandset$ | async"
+    autoFocus="false" 
+  >
+    <mat-nav-list>
+      <a class="sidenav-link sidenav-link-home" mat-list-item routerLink="/" (click)="sidenav.toggle()">
+        <div class="menu-item-wrapper">
+          <mat-icon class="sidenav-icon">home</mat-icon>
+          Home
+        </div>
+      </a>
+      <a class="sidenav-link" mat-list-item routerLink="/contacts" (click)="sidenav.toggle()">
+        <div class="menu-item-wrapper">
+          <mat-icon>person</mat-icon>
+          Contacts
+        </div>
+      </a>
+      <a class="sidenav-link" mat-list-item routerLink="/favourites" (click)="sidenav.toggle()">
+        <div class="menu-item-wrapper">
+          <mat-icon>star</mat-icon>
+          Favourites
+        </div>
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+/* styles.css or styles.scss */
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sometype+Mono&display=swap');
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.my-sidenav .mat-drawer-content {
+  background-color: #333;
+  color: pink;
+}
+
+.my-sidenav .mat-drawer {
+  width: 250px;
+}
+
+.mat-mdc-snack-bar-container {
+  &.transparent-snackbar {
+    --mdc-snackbar-container-color: rgba(90, 90, 90, 0.482);
+    --mat-mdc-snack-bar-button-color: #fff;
+    --mdc-snackbar-supporting-text-color: #fff;
+  }
+}
+
+.my-sidenav .mat-drawer-content a,
+.my-sidenav .mat-drawer-content p {
+  color: pink;
+}

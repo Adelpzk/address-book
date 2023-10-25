@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="gradient-section">
+    <div class="text-section" *ngIf="favorites.length === 0">
+      <h1>No Favourites yet!</h1>
+    </div>
+    <div class="text-section" *ngIf="favorites.length > 0">
+      <h1>Find your Favs in a second</h1>
+    </div>
+    <div *ngFor="let fav of favorites">
+      <app-card
+        [firstname]="fav.firstname"
+        [lastname]="fav.lastname"
+        [cell]="fav.cell"
+        [dob]="fav.dob"
+        [age]="fav.age"
+        [nat]="fav.nat"
+        [email]="fav.email"
+        [country]="fav.country"
+        [city]="fav.city"
+        [image_thumbnail]="fav.image_thumbnail"
+        [image_large]="fav.image_large"
+        [lat]="fav.lat"
+        [lon]="fav.lon"
+      ></app-card>
+    </div>
+  </div>
+</div>

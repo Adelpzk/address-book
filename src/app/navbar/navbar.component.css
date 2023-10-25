@@ -1,0 +1,105 @@
+.transparent-navbar {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none !important;
+  color: white;
+  font-family: "Sometype Mono", monospace;
+  font-size: medium;
+}
+
+.nav-item mat-icon {
+  margin-right: 2px; 
+}
+
+::ng-deep .menu-item-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sidenav-link-home {
+  margin-top: 40px;
+}
+
+.sidenav-link {
+  margin-bottom: 8px;
+  margin-left: 12px;
+}
+
+::ng-deep .mat-nav-list .mat-list-item .mat-icon {
+  margin-right: 20px;
+}
+
+::ng-deep .mat-drawer {
+  background: linear-gradient(
+    227deg,
+    #ffb6c1,
+    #ff69b4,
+    #d53c8d,
+    #b57edc,
+    #87cefa,
+    #98fb98
+  );
+  background-size: 360% 360%;
+  animation: gradient-animation 24s ease infinite;
+  color: white;
+  font-family: "Sometype Mono", monospace;
+  font-size: medium;
+  width: 250px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+::ng-deep .mat-drawer,
+::ng-deep .mat-drawer a,
+::ng-deep .mat-drawer p,
+::ng-deep .mat-drawer span {
+  color: white !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .logo img {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.desktop-menu a {
+  margin-right: 20px;
+}
+
+.sidenav-container {
+  height: 100%;
+}
+
+.logo img {
+  height: 20px;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+mat-sidenav {
+  width: 250px;
+}

@@ -1,0 +1,21 @@
+<mat-card (click)="openDialog()" class="custom-card">
+  <div class="avatar-container">
+    <img
+      [lazyLoad]="image_thumbnail"
+      [defaultImage]="defaulPath"
+      alt="Avatar"
+      class="example-header-image"
+      loading="lazy"
+    />
+  </div>
+  <div class="content-container">
+    <mat-card-title>{{ firstname }} {{ lastname }}</mat-card-title>
+    <mat-card-subtitle>{{ dob | date : "mediumDate" }}</mat-card-subtitle>
+  </div>
+  <div class="number">
+    <div>{{ cell }}</div>
+  </div>
+  <div class="email">
+    <div>{{ email }}</div>
+  </div>
+</mat-card>

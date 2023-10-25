@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="gradient-section">
+    <div class="text-section">
+      <h1>Explore your contacts at a glance</h1>
+    </div>
+    <div *ngFor="let user of userData">
+      <app-card
+        [firstname]="user.name.first"
+        [lastname]="user.name.last"
+        [cell]="user.cell"
+        [dob]="user.dob.date"
+        [age]="user.dob.age"
+        [nat]="user.nat"
+        [email]="user.email"
+        [country]="user.location.country"
+        [city]="user.location.city"
+        [image_thumbnail]="user.picture.thumbnail"
+        [image_large]="user.picture.large"
+        [lat]="user.location.coordinates.latitude"
+        [lon]="user.location.coordinates.longitude"
+      ></app-card>
+    </div>
+    <mat-paginator
+      class="custom-paginator"
+      color="accent"
+      [length]="totalLength"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+      (page)="onPaginateChange($event)"
+      length="1000"
+    ></mat-paginator>
+  </div>
+</div>
