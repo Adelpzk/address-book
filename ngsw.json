@@ -1,0 +1,85 @@
+{
+  "configVersion": 1,
+  "timestamp": 1698280027879,
+  "index": "/adress-book/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/adress-book/favicon.ico",
+        "/adress-book/index.html",
+        "/adress-book/main.aa3a6d517fff94ad.js",
+        "/adress-book/polyfills.831829e930496ed2.js",
+        "/adress-book/runtime.55d15bfa914e2706.js",
+        "/adress-book/styles.5399987e101c4475.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/adress-book/assets/HomePage.webp",
+        "/adress-book/assets/addressbook-high-resolution-logo-white-transparent.png",
+        "/adress-book/assets/icons/icon-128x128.png",
+        "/adress-book/assets/icons/icon-144x144.png",
+        "/adress-book/assets/icons/icon-152x152.png",
+        "/adress-book/assets/icons/icon-192x192.png",
+        "/adress-book/assets/icons/icon-384x384.png",
+        "/adress-book/assets/icons/icon-512x512.png",
+        "/adress-book/assets/icons/icon-72x72.png",
+        "/adress-book/assets/icons/icon-96x96.png",
+        "/adress-book/assets/legoface.jpeg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/adress-book/assets/HomePage.webp": "4104f7227af1199c2cf9f89c31d712f68f82c1e9",
+    "/adress-book/assets/addressbook-high-resolution-logo-white-transparent.png": "0679b9e4b216e19e2e517073023d22391a25e8d7",
+    "/adress-book/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/adress-book/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/adress-book/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/adress-book/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/adress-book/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/adress-book/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/adress-book/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/adress-book/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/adress-book/assets/legoface.jpeg": "55c550a4c48fd2582028dce9f8cf71072eb4a4b7",
+    "/adress-book/favicon.ico": "203b6185f4d81d746986e46f190d76478a636567",
+    "/adress-book/index.html": "909cbbccf5425441e55a89a6f0f11a3324b35564",
+    "/adress-book/main.aa3a6d517fff94ad.js": "9ae74abc86d17bcc021698085f287c2f20bb0b34",
+    "/adress-book/polyfills.831829e930496ed2.js": "efb42d1214e3405482a79688670c13735645e17d",
+    "/adress-book/runtime.55d15bfa914e2706.js": "40373ea05dbf14238254f3cc57b04413041a25b2",
+    "/adress-book/styles.5399987e101c4475.css": "972c6dd93fc3a64b54ec65f459fcbfbaa339ef22"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
