@@ -1,7 +1,5 @@
 # AdressBook
 
-# Address Book Application
-
 Welcome to my Address Book project! I designed this application with various features and functionalities, keeping simplicity and efficiency in mind. Here's a glimpse of what my app offers and the journey I undertook to bring this project to life!
 
 ## Live Application
@@ -56,5 +54,6 @@ I adopted several strategies to ensure enhanced performance and user experience:
 - **User Authentication:**  implementing a secure authentication system to protect user data.
 - **Expanded Testing:**  increase test coverage to ensure flawless performance.
 
+Hope you ejoy it😀😀
 
 ---
