@@ -23,9 +23,6 @@ export class CardComponent implements OnInit {
   @Input() lat = '';
   @Input() lon = '';
 
-  /* path for default image used in lazy loading */
-  defaulPath = ' ../../assets/legoface.jpeg';
-
   constructor(public dialog: MatDialog) {}
   /* Method to check if user is filled or not
   passed the dialog */
