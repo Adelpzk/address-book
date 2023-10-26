@@ -22,6 +22,7 @@ import { MapComponent } from './map/map.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FavoritesComponent } from './favorites/favorites.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { PhonePipe } from './card/PhonePipe.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
     CardComponent,
     UserDetailDialogComponent,
     MapComponent,
+    PhonePipe,
     FavoritesComponent,
   ],
   imports: [
